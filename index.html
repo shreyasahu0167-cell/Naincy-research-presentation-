@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Quality Analysis | Shuklaganj</title>
+    <style>
+        :root {
+            --primary: #0077b6;
+            --secondary: #00b4d8;
+            --accent: #90e0ef;
+            --dark: #03045e;
+            --light: #f8f9fa;
+            --success: #2d6a4f;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--light);
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 90%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo { font-weight: bold; color: var(--primary); font-size: 1.2rem; }
+
+        /* Hero Section */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(3, 4, 94, 0.7), rgba(3, 4, 94, 0.7)), 
+                        url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        header h1 { font-size: 3rem; margin-bottom: 10px; max-width: 900px; }
+        header p { font-size: 1.2rem; max-width: 700px; opacity: 0.9; }
+
+        /* Sections */
+        section { padding: 80px 10%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-10px); }
+        .card h3 { color: var(--primary); border-left: 4px solid var(--primary); padding-left: 10px; }
+
+        /* Results Table */
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        th, td { padding: 15px; border: 1px solid #ddd; text-align: left; }
+        th { background: var(--primary); color: white; }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; text-align: center; padding: 40px; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            section { padding: 50px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">CSJM University | Geography Dept.</div>
+    </nav>
+
+    <header>
+        <h1>Comparative Analysis of Drinking Water Quality</h1>
+        <p>A Study of Government and Private Schools in Urban and Rural Shuklaganj, Unnao (2025-2026)</p>
+        <div style="margin-top: 30px;">
+            <strong>Submitted By:</strong> Naincy Tiwari | <strong>Guided By:</strong> Dr. Kashif Imdad
+        </div>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        [span_0](start_span)<p>Safe drinking water is a fundamental requirement for public health and educational institutions[span_0](end_span). [span_1](start_span)This study evaluates the variations in water quality across institutional and geographical disparities in the Shuklaganj region[span_1](end_span).</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Problem Statement</h3>
+                <ul>
+                    [span_2](start_span)<li>Unequal access to safe drinking water[span_2](end_span).</li>
+                    [span_3](start_span)<li>Lack of proper monitoring systems[span_3](end_span).</li>
+                    [span_4](start_span)<li>Contamination risks in rural/government institutions[span_4](end_span).</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Research Objectives</h3>
+                <ul>
+                    [span_5](start_span)<li>Assess drinking water quality standards[span_5](end_span).</li>
+                    [span_6](start_span)<li>Compare Government vs Private performance[span_6](end_span).</li>
+                    [span_7](start_span)<li>Identify key issues and suggest improvements[span_7](end_span).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="methodology" style="background: #eef2f3;">
+        <h2>Methodology & Parameters</h2>
+        [span_8](start_span)<p>Using a Comparative and Analytical research design, we tested water samples across Urban and Rural zones[span_8](end_span).</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Analysis Parameters</h3>
+                <ul>
+                    [span_9](start_span)<li><strong>Physical:</strong> Colour, Odour, Turbidity[span_9](end_span).</li>
+                    [span_10](start_span)<li><strong>Chemical:</strong> pH, TDS, Hardness[span_10](end_span).</li>
+                    [span_11](start_span)<li><strong>Biological:</strong> Coliform and E. coli[span_11](end_span).</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Data Collection</h3>
+                [span_12](start_span)<p>Primary water sample testing and secondary reports were analyzed using the Water Quality Index (WQI)[span_12](end_span).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="results">
+        <h2>Key Findings & Results</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Government Schools</th>
+                    <th>Private Schools</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Urban</strong></td>
+                    [span_13](start_span)<td>Moderate quality; basic filtration[span_13](end_span).</td>
+                    <td>Best quality; [span_14](start_span)RO/UV systems used[span_14](end_span).</td>
+                </tr>
+                <tr>
+                    <td><strong>Rural</strong></td>
+                    [span_15](start_span)<td>High turbidity; most vulnerable[span_15](end_span).</td>
+                    [span_16](start_span)<td>Moderate quality; limited infrastructure[span_16](end_span).</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="suggestions" style="background: var(--dark); color: white;">
+        <h2 style="color: var(--accent);">Suggestions for Improvement</h2>
+        <div class="grid">
+            <div class="card" style="color: #333;">
+                <h3>Infrastructure</h3>
+                [span_17](start_span)<p>Installation of RO/UV systems in all schools and government funding for rural infrastructure[span_17](end_span).</p>
+            </div>
+            <div class="card" style="color: #333;">
+                <h3>Monitoring</h3>
+                [span_18](start_span)<p>Regular water quality monitoring and periodic cleaning of storage tanks[span_18](end_span).</p>
+            </div>
+            <div class="card" style="color: #333;">
+                <h3>Awareness</h3>
+                [span_19](start_span)<p>Programs focused on hygiene and sanitation for students and staff[span_19](end_span).</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        [span_20](start_span)<p><strong>Conclusion:</strong> Ensuring safe water is critical for student health and learning outcomes[span_20](end_span).</p>
+        <h2 style="margin-top: 20px;">THANK YOU</h2>
+    </footer>
+
+</body>
+</html>
